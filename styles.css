@@ -7,6 +7,9 @@ body {
   background-color: black;
 
   color: white;
+
+  background-image: url("./media/sydney-sweeney-boobs.gif"); /* Path to your background image */
+  background-repeat: repeat; /* This will repeat the background image both horizontally and vertically */
 }
 
 #icons {
