@@ -9,9 +9,23 @@ body {
   color: white;
 }
 
+#icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#icons a {
+  margin: 1rem 2rem;
+}
+
+#uniswap-icon {
+  /* invert color */
+  filter: invert(1);
+}
+
 #gifs {
-  width: 85vw;
-  height: 100vh;
+  width: 60vw;
 }
 
 #gifs img {
