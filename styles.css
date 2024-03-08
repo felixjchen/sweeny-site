@@ -8,8 +8,12 @@ body {
 
   color: white;
 
-  background-image: url("./media/sydney-sweeney-boobs.gif"); /* Path to your background image */
+  background-image: url("./media/sydney-sweeney-boobs.gif");
   background-repeat: repeat; /* This will repeat the background image both horizontally and vertically */
+  background-position: 10px 10px;
+
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
 }
 
 #icons {
@@ -37,4 +41,34 @@ body {
   width: 100%; /* Stretch the image to fill the container */
   height: auto; /* Maintain aspect ratio */
   margin: auto;
+}
+
+.scrolling-text-container {
+  width: 100%; /* Adjust width as needed */
+  position: fixed; /* Fix the container's position */
+  bottom: 0; /* Align container to the bottom of the viewport */
+  left: 0; /* Align container to the left of the viewport */
+  padding: 1rem; /* Add padding to prevent text from sticking to the edges */
+  z-index: 9999; /* Ensure text stays on top of other elements */
+  font-size: 24px;
+}
+.scrolling-text {
+  white-space: nowrap;
+  transform: translateY(100%) rotate(-90deg); /* Rotate the text 90 degrees counter-clockwise */
+  transform-origin: top left; /* Set the rotation origin to the top left corner */
+  animation: scroll-up 8s linear infinite;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(100vh) rotate(-90deg); /* Start from below the viewport */
+  }
+  100% {
+    transform: translateY(-3000%) rotate(-90deg); /* Move text above the viewport */
+  }
+}
+.bold-italic-underlined {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
 }
