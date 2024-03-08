@@ -50,13 +50,17 @@ body {
   left: 0; /* Align container to the left of the viewport */
   padding: 1rem; /* Add padding to prevent text from sticking to the edges */
   z-index: 9999; /* Ensure text stays on top of other elements */
-  font-size: 24px;
+  font-size: 30px;
 }
 .scrolling-text {
+  /* Reset styles for the parent paragraph */
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
   white-space: nowrap;
   transform: translateY(100%) rotate(-90deg); /* Rotate the text 90 degrees counter-clockwise */
   transform-origin: top left; /* Set the rotation origin to the top left corner */
-  animation: scroll-up 8s linear infinite;
+  animation: scroll-up 10s linear infinite;
 }
 
 @keyframes scroll-up {
@@ -71,4 +75,13 @@ body {
   font-weight: bold;
   font-style: italic;
   text-decoration: underline;
+}
+
+.link {
+  color: blue; /* Default color for unvisited link */
+  text-decoration: none; /* Remove underline */
+}
+
+.link:visited {
+  color: blue; /* Keep the same color for visited link */
 }
