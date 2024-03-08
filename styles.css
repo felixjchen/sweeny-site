@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+
+  color: white;
+}
+
+#gifs {
+  width: 85vw;
+  height: 100vh;
+}
+
+#gifs img {
+  width: 100%; /* Stretch the image to fill the container */
+  height: auto; /* Maintain aspect ratio */
+  margin: auto;
+}
